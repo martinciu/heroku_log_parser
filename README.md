@@ -1,4 +1,4 @@
-# HerokuLogParseo
+# HerokuLogParser
 
 Takes heroku log line as input and gives JSON output
 
