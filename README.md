@@ -21,7 +21,7 @@ Or install it yourself as:
 ```ruby
 require 'heroku_log_parser'
 
-log_line = "2012-04-29T15:57:54+00:00 heroku[router]: GET www.foo.com/autocomplete/schools?q=Colegio+American dyno=web.4 queue=0 wait=0ms service=17ms status=200 bytes=496"
+log_line = %(2012-04-29T15:57:50+00:00 heroku[web.4]: Error R14 (Memory quota exceeded)) 
 
 HerokuLogParser.parse(line)
 #=> "{\"timestamp\":\"2012-04-29T15:57:50+00:00\",\"source\":\"heroku\",\"process\":\"web.4\",\"message\":\"Error R14 (Memory quota exceeded)\"}"
